@@ -61,6 +61,7 @@ export const registerUser = async (req, res) => {
 }
 
 //login user : /api/user/login
+//post
 export const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -108,6 +109,7 @@ export const loginUser = async (req, res) => {
 }
 
 //logout user : /api/user/logout
+//get
 export const logoutUser = (req, res) => {
     try {
         res.clearCookie('token', {
@@ -123,6 +125,7 @@ export const logoutUser = (req, res) => {
 }
 
 //checkauthenticated user : /api/user/auth
+//get
 export const isAuthUser = async (req, res) => {
     try {
           

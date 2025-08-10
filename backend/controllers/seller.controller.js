@@ -52,7 +52,7 @@ export const sellerLogout = (req, res) => {
 }
 
 //check if seller is authenticated
-export const authSeller = (req, res, next) => {
+export const isauthSeller = (req, res, next) => {
     try
     {
         res.status(200).json({ message: 'Seller is authenticated', success: true });
